@@ -51,7 +51,7 @@ export default {
   data () {
     return {
       drawer: false,
-      api_key: process.env.VUE_APP_NEWS_API_KEY,
+      api_key: '63f967c47efd431382f275165617cba1',
       articles: [],
       errors: []
     }
