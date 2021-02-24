@@ -60,7 +60,6 @@ export default {
     axios.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=' + this.api_key)
       .then(response => {
         this.articles = response.data.articles
-        // console.log(response.data.articles) // This will give you access to the full object
       })
       .catch(e => {
         this.errors.push(e)
@@ -71,7 +70,6 @@ export default {
       axios.get('https://newsapi.org/v2/top-headlines?sources=' + source + '&apiKey=' + this.api_key)
         .then(response => {
           this.articles = response.data.articles
-          // console.log(response.data)
         })
         .catch(e => {
           this.errors.push(e)
